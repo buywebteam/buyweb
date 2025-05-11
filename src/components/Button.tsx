@@ -23,13 +23,13 @@ const Button: React.FC<ButtonProps> = ({
       bgColor: "bg-black",
       textColor: "text-white",
       border: "",
-      padding: "py-2 px-4",
+      padding: "py-2 px-3",
     },
     call: {
       bgColor: "bg-green-500",
       textColor: "text-white",
       border: "",
-      padding: "py-2 px-4",
+      padding: "py-2 px-3",
     },
   };
 

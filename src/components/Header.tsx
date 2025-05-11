@@ -1,4 +1,4 @@
-import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 function Header() {
   return (
@@ -17,11 +17,6 @@ function Header() {
                 <FaWhatsapp className="lg:text-3xl text-2xl text-white" />{" "}
               </a>
             </span>
-            {/*   <span className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center">             </span>
-             */}
-            <a href="/">
-              <FaTelegramPlane className="lg:text-3xl text-2xl text-white" />
-            </a>
           </div>
         </div>
       </div>

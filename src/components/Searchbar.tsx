@@ -16,12 +16,12 @@ const SearchBar = () => {
     <div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div>
-          <div className="flex justify-between items-center flex-wrap gap-2">
+          <div className="flex justify-between items-center flex-wrap gap-3">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-6 py-2 text-sm rounded-full cursor-pointer font-semibold transition-colors duration-200 ${
+                className={`px-4 py-2 text-sm rounded-full cursor-pointer font-semibold transition-colors duration-200 ${
                   activeCategory === category
                     ? "bg-black text-white"
                     : "border border-black text-black"
