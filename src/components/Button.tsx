@@ -1,5 +1,5 @@
 interface ButtonProps {
-  type?: "default" | "destructive" | "outline" | "disabled";
+  type?: "default" | "call";
   label?: string;
   onClick?: () => void;
 }
@@ -10,37 +10,34 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
 }) => {
   const buttonStyles: Record<
-    "default" | "destructive" | "outline" | "disabled",
-    { bgColor: string; textColor: string; border: string; disabled?: boolean }
+    "default" | "call",
+    {
+      bgColor: string;
+      textColor: string;
+      border: string;
+      padding: string;
+      disabled?: boolean;
+    }
   > = {
     default: {
       bgColor: "bg-black",
       textColor: "text-white",
       border: "",
+      padding: "py-2 px-4",
     },
-    destructive: {
-      bgColor: "bg-red-500",
+    call: {
+      bgColor: "bg-green-500",
       textColor: "text-white",
       border: "",
-    },
-    outline: {
-      bgColor: "bg-transparent",
-      textColor: "text-black",
-      border: "border border-black",
-    },
-    disabled: {
-      bgColor: "bg-gray-400",
-      textColor: "text-gray-200",
-      border: "",
-      disabled: true,
+      padding: "py-2 px-4",
     },
   };
 
-  const { bgColor, textColor, border, disabled } = buttonStyles[type];
+  const { bgColor, textColor, border, padding, disabled } = buttonStyles[type];
 
   return (
     <button
-      className={`py-2 px-4 rounded-md flex items-center justify-center w-[200px] ${bgColor} ${border}`}
+      className={`${padding} rounded-md flex items-center justify-center w-auto cursor-pointer ${bgColor} ${border}`}
       onClick={!disabled ? onClick : undefined}
       disabled={disabled}
     >
