@@ -2,6 +2,7 @@ import Button from "./Button";
 
 type Website = {
   id: number;
+  name: string;
   image: string;
   price: string;
   videoLink: string;
@@ -16,17 +17,21 @@ function WebsiteDisplay({ websites }: Props) {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {websites.map((site) => (
-        <div key={site.id} className="lg:w-96 w-full h-72 rounded-lg border">
+        <div
+          key={site.id}
+          className="lg:w-96 w-full h-[380px] rounded-lg border"
+        >
           <div>
             <img
               src={site.image}
-              className="lg:w-96 w-full h-44 rounded-t-lg object-cover"
+              className="lg:w-96 w-full h-56 rounded-t-lg object-cover"
             />
           </div>
-          <p className="font-bold text-gray-700 text-2xl text-center py-2.5">
+          <p className="font-bold text-2xl text-center pt-2.5">{site.name}</p>
+          <p className="font-bold text-gray-700 text-3xl text-center py-2.5">
             {site.price}
           </p>
-          <div className="flex justify-center gap-3">
+          <div className="flex justify-center gap-3.5">
             <a href={site.videoLink}>
               <Button label="Watch Live Video" />
             </a>

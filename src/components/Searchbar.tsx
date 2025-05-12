@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import WebsiteDisplay from "./WebsiteDisplay";
 import { websites } from "../websitedata/data";
+import Spinner from "./Spinner";
 
 const categories = [
   "Exchange Website",
@@ -15,6 +16,7 @@ const SearchBar = () => {
   const [filteredWebsites, setFilteredWebsites] = useState<
     {
       id: number;
+      name: string;
       image: string;
       price: string;
       videoLink: string;
@@ -27,14 +29,18 @@ const SearchBar = () => {
   useEffect(() => {
     setLoading(true);
     const timer = setTimeout(() => {
-      const filtered = websites.filter(
-        (site) =>
-          site.category.trim().toLowerCase() ===
-          activeCategory.trim().toLowerCase()
-      );
+      const filtered = websites
+        .filter(
+          (site) =>
+            site.category.trim().toLowerCase() ===
+            activeCategory.trim().toLowerCase()
+        )
+        .map((site) => ({
+          ...site,
+        }));
       setFilteredWebsites(filtered);
       setLoading(false);
-    }, 500); // Simulate delay (you can adjust)
+    }, 1000); // Simulate delay (you can adjust)
 
     return () => clearTimeout(timer);
   }, [activeCategory]);
@@ -62,7 +68,7 @@ const SearchBar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         {loading ? (
           <div className="text-center py-20 font-semibold text-lg">
-            Loading websites...
+            <Spinner />
           </div>
         ) : (
           <WebsiteDisplay websites={filteredWebsites} />

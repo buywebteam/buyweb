@@ -1,6 +1,7 @@
 export const websites = [
   {
     id: 1,
+    name: "FX Exchange",
     image: "/test.jpg",
     price: "#100,000",
     videoLink: "/",
@@ -9,6 +10,7 @@ export const websites = [
   },
   {
     id: 2,
+    name: "Anchor Capital",
     image: "/test.jpg",
     price: "#120,000",
     videoLink: "/",
@@ -17,6 +19,7 @@ export const websites = [
   },
   {
     id: 3,
+    name: "Swiftcargo",
     image: "/test.jpg",
     price: "#90,000",
     videoLink: "/",
@@ -25,6 +28,7 @@ export const websites = [
   },
   {
     id: 4,
+    name: "Grant",
     image: "/test.jpg",
     price: "#150,000",
     videoLink: "/",
@@ -33,6 +37,7 @@ export const websites = [
   },
   {
     id: 5,
+    name: "Real ES",
     image: "/test.jpg",
     price: "#250,000",
     videoLink: "/",
@@ -41,24 +46,9 @@ export const websites = [
   },
   {
     id: 6,
+    name: "UX Exchange",
     image: "/test.jpg",
     price: "#110,000",
-    videoLink: "/",
-    chatLink: "/",
-    category: "Exchange Website", // Added more to test back and forth
-  },
-  {
-    id: 7,
-    image: "/test.jpg",
-    price: "#160,000",
-    videoLink: "/",
-    chatLink: "/",
-    category: "Exchange Website", // Added more to test back and forth
-  },
-  {
-    id: 8,
-    image: "/test.jpg",
-    price: "#180,000",
     videoLink: "/",
     chatLink: "/",
     category: "Exchange Website", // Added more to test back and forth
