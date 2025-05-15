@@ -12,7 +12,11 @@ const categories = [
 ];
 
 const SearchBar = () => {
-  const [activeCategory, setActiveCategory] = useState<string>(categories[0]);
+  const [activeCategory, setActiveCategory] = useState<string>(() => {
+    // Get saved category from localStorage or fallback to first category
+    return localStorage.getItem("activeCategory") || categories[0];
+  });
+
   const [filteredWebsites, setFilteredWebsites] = useState<
     {
       id: number;
@@ -27,20 +31,19 @@ const SearchBar = () => {
   const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
+    // Save active category to localStorage
+    localStorage.setItem("activeCategory", activeCategory);
+
     setLoading(true);
     const timer = setTimeout(() => {
-      const filtered = websites
-        .filter(
-          (site) =>
-            site.category.trim().toLowerCase() ===
-            activeCategory.trim().toLowerCase()
-        )
-        .map((site) => ({
-          ...site,
-        }));
+      const filtered = websites.filter(
+        (site) =>
+          site.category.trim().toLowerCase() ===
+          activeCategory.trim().toLowerCase()
+      );
       setFilteredWebsites(filtered);
       setLoading(false);
-    }, 1000); // Simulate delay (you can adjust)
+    }, 1000); // Simulated loading delay
 
     return () => clearTimeout(timer);
   }, [activeCategory]);
@@ -70,8 +73,12 @@ const SearchBar = () => {
           <div className="text-center py-20 font-semibold text-lg">
             <Spinner />
           </div>
-        ) : (
+        ) : filteredWebsites.length > 0 ? (
           <WebsiteDisplay websites={filteredWebsites} />
+        ) : (
+          <div className="text-center py-20 font-semibold text-lg">
+            No website found
+          </div>
         )}
       </div>
     </div>

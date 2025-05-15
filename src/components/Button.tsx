@@ -41,7 +41,7 @@ const Button: React.FC<ButtonProps> = ({
       onClick={!disabled ? onClick : undefined}
       disabled={disabled}
     >
-      <span className={`text-base ${textColor}`}>{label}</span>
+      <span className={`text-[14px] ${textColor}`}>{label}</span>
     </button>
   );
 };

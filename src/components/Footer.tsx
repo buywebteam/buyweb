@@ -17,7 +17,7 @@ function Footer() {
 
           <div className="flex items-center gap-4 text-white">
             <span className="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center">
-              <a href="/">
+              <a href="https://wa.me/message/4AJYUNZJISVAG1">
                 <FaWhatsapp className="lg:text-3xl text-2xl text-white" />{" "}
               </a>
             </span>

@@ -31,9 +31,9 @@ function WebsiteDisplay({ websites }: Props) {
           <p className="font-bold text-gray-700 text-3xl text-center py-2.5">
             {site.price}
           </p>
-          <div className="flex justify-center gap-3.5">
+          <div className="flex justify-center gap-2.5">
             <a href={site.videoLink}>
-              <Button label="Watch Live Video" />
+              <Button label="Watch Website Video" />
             </a>
             <a href={site.chatLink}>
               <Button type="call" label="Chat With Admin" />
