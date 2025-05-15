@@ -76,8 +76,8 @@ const SearchBar = () => {
         ) : filteredWebsites.length > 0 ? (
           <WebsiteDisplay websites={filteredWebsites} />
         ) : (
-          <div className="text-center py-20 font-semibold text-lg">
-            No website found
+          <div className="text-center py-20 font-semibold text-base">
+            No website found. Check back later.
           </div>
         )}
       </div>
