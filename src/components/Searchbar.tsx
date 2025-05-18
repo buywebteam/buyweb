@@ -7,7 +7,6 @@ const categories = [
   "Exchange Website",
   "Investment Website",
   "Consignment Website",
-  "Grant Website",
   "Real Estate Website",
 ];
 
