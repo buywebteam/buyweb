@@ -5,9 +5,10 @@ import Spinner from "./Spinner";
 
 const categories = [
   "Exchange Website",
+  //"Grant Website",
   "Investment Website",
   "Consignment Website",
-  "Real Estate Website",
+  // "Real Estate Website",
 ];
 
 const SearchBar = () => {
@@ -50,6 +51,11 @@ const SearchBar = () => {
   return (
     <div id="websites" className="scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div>
+          <h1 className="text-center font-bold text-3xl mb-14">
+            Explore Website Category
+          </h1>
+        </div>
         <div className="flex justify-between items-center flex-wrap gap-3">
           {categories.map((category) => (
             <button
