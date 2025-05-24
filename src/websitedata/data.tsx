@@ -50,7 +50,7 @@ export const websites = [
     name: "Fundnest",
     image: "/fundnest.png",
     price: "#130,000",
-    videoLink: "/videos/fundnest.mp4",
+    videoLink: "/videos/Fundnest.mp4",
     chatLink: "https://wa.me/message/4AJYUNZJISVAG1",
     category: "Investment Website",
   },
