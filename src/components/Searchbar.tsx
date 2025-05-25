@@ -6,9 +6,9 @@ import Spinner from "./Spinner";
 const categories = [
   "Exchange Website",
   //"Grant Website",
-  "Investment Website",
   "Consignment or Logistics Website",
-  // "Real Estate Website",
+  "Real Estate Website",
+  "Investment Website",
 ];
 
 const SearchBar = () => {

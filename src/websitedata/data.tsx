@@ -45,13 +45,4 @@ export const websites = [
     chatLink: "https://wa.me/message/4AJYUNZJISVAG1",
     category: "Consignment or Logistics Website",
   },
-  {
-    id: 6,
-    name: "Fundnest",
-    image: "/fundnest.png",
-    price: "#130,000",
-    videoLink: "/videos/Fundnest.mp4",
-    chatLink: "https://wa.me/message/4AJYUNZJISVAG1",
-    category: "Investment Website",
-  },
 ];
