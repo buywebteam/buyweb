@@ -7,7 +7,7 @@ export const websites = [
     price: "#85,000",
     videoLink: "/videos/Consitrack.mp4",
     chatLink: "https://wa.me/message/4AJYUNZJISVAG1",
-    category: "Consignment Website",
+    category: "Consignment or Logistics Website",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ export const websites = [
     price: "#80,000",
     videoLink: "/videos/Consyne.mp4",
     chatLink: "https://wa.me/message/4AJYUNZJISVAG1",
-    category: "Consignment Website",
+    category: "Consignment or Logistics Website",
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ export const websites = [
     price: "#85,000",
     videoLink: "/videos/Delivra.mp4",
     chatLink: "https://wa.me/message/4AJYUNZJISVAG1",
-    category: "Consignment Website",
+    category: "Consignment or Logistics Website",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ export const websites = [
     price: "#80,000",
     videoLink: "/videos/Shipnetic.mp4",
     chatLink: "https://wa.me/message/4AJYUNZJISVAG1",
-    category: "Consignment Website",
+    category: "Consignment or Logistics Website",
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ export const websites = [
     price: "#90,000",
     videoLink: "/videos/Swiftcargo.mp4",
     chatLink: "https://wa.me/message/4AJYUNZJISVAG1",
-    category: "Consignment Website",
+    category: "Consignment or Logistics Website",
   },
   {
     id: 6,
