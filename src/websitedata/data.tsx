@@ -49,7 +49,7 @@ export const websites = [
     id: 6,
     name: "FX-Exchange",
     image: "/fxexchange.png",
-    price: "#80,000",
+    price: "#75,000",
     videoLink: "/videos/fxexchange.mp4",
     chatLink: "https://wa.me/message/4AJYUNZJISVAG1",
     category: "Exchange Website",
