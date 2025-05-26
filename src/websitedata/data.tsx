@@ -45,4 +45,13 @@ export const websites = [
     chatLink: "https://wa.me/message/4AJYUNZJISVAG1",
     category: "Consignment or Logistics Website",
   },
+  {
+    id: 6,
+    name: "FX-Exchange",
+    image: "/fxexchange.png",
+    price: "#95,000",
+    videoLink: "/videos/fxexchange.mp4",
+    chatLink: "https://wa.me/message/4AJYUNZJISVAG1",
+    category: "Exchange Website",
+  },
 ];
