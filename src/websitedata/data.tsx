@@ -6,7 +6,7 @@ export const websites = [
     image: "/consitrack.png",
     price: "55$",
     videoLink: "/videos/Consitrack.mp4",
-    chatLink: "https://wa.me/message/4AJYUNZJISVAG1",
+    chatLink: "https://wa.me/qr/MI6T5PWGO6EDI1",
     category: "Consignment or Logistics Website",
   },
   {
@@ -15,7 +15,7 @@ export const websites = [
     image: "/consyne.png",
     price: "80$",
     videoLink: "/videos/Consyne.mp4",
-    chatLink: "https://wa.me/message/4AJYUNZJISVAG1",
+    chatLink: "https://wa.me/qr/MI6T5PWGO6EDI1",
     category: "Consignment or Logistics Website",
   },
   {
@@ -24,7 +24,7 @@ export const websites = [
     image: "/delivra.png",
     price: "60$",
     videoLink: "/videos/Delivra.mp4",
-    chatLink: "https://wa.me/message/4AJYUNZJISVAG1",
+    chatLink: "https://wa.me/qr/MI6T5PWGO6EDI1",
     category: "Consignment or Logistics Website",
   },
   {
@@ -33,7 +33,7 @@ export const websites = [
     image: "/shipnetic.png",
     price: "70$",
     videoLink: "/videos/Shipnetic.mp4",
-    chatLink: "https://wa.me/message/4AJYUNZJISVAG1",
+    chatLink: "https://wa.me/qr/MI6T5PWGO6EDI1",
     category: "Consignment or Logistics Website",
   },
   {
@@ -42,7 +42,7 @@ export const websites = [
     image: "/fxexchange.png",
     price: "65$",
     videoLink: "/videos/fxexchange.mp4",
-    chatLink: "https://wa.me/message/4AJYUNZJISVAG1",
+    chatLink: "https://wa.me/qr/MI6T5PWGO6EDI1",
     category: "Exchange Website",
   },
   {
@@ -51,7 +51,7 @@ export const websites = [
     image: "/cbexchange.png",
     price: "60$",
     videoLink: "/videos/cbexchange.mp4",
-    chatLink: "https://wa.me/message/4AJYUNZJISVAG1",
+    chatLink: "https://wa.me/qr/MI6T5PWGO6EDI1",
     category: "Exchange Website",
   },
 ];

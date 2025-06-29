@@ -13,7 +13,7 @@ function Header() {
 
           <div className="flex items-center gap-3">
             <span className="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center">
-              <a href="https://wa.me/message/4AJYUNZJISVAG1">
+              <a href="https://wa.me/qr/MI6T5PWG06ED11">
                 <FaWhatsapp className="lg:text-3xl text-2xl text-white" />{" "}
               </a>
             </span>
